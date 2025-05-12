@@ -1,0 +1,160 @@
+Body {
+  background:#22fff4;
+  Perspective: 900px;
+  Background-color: #22fff4;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
+  Height: 110vh;
+  Margin:100px;
+  font-family:'Nunito', sans-serif; 
+  font-weight: 600px; 
+}
+
+.cubo1 {
+  Width: 200px;
+  Height: 200px;
+  Position: absolute;
+  Transform-style: preserve-3d;
+  Animation: rotar 10s linear infinite;
+  left:46%;
+  top:16%;
+}
+
+.cara1 {
+  Position: absolute;
+  Width: 160px;
+  Height: 150px;
+}
+
+.cara1 img {
+  Width: 93%;
+  Height: 93%;
+  Object-fit: cover;
+}
+
+   .cara1:nth-child(1) { transform: rotateY(0deg) translateZ(150px); }
+    .cara1:nth-child(2) { transform: rotateY(60deg) translateZ(150px); }
+    .cara1:nth-child(3) { transform: rotateY(120deg) translateZ(150px); }
+    .cara1:nth-child(4) { transform: rotateY(180deg) translateZ(150px); }
+    .cara1:nth-child(5) { transform: rotateY(240deg) translateZ(150px); }
+    .cara1:nth-child(6) { transform: rotateY(300deg) translateZ(150px); }
+
+    @keyframes rotar {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(360deg); }
+	}
+	
+	
+#header{
+	Position:absolute;
+	Width:80px;
+	left:-9%;
+	top:3%;
+}
+ul, ol{
+	list-style:none;
+}
+.nav li a{
+	Background-color:white;
+	color:#22fff4;
+	text-decoration:none;
+	padding:10px 15px;
+	Display:block;
+}
+.nav li a:hover{
+	Background-color:#22fff4;
+} 
+.nav li ul{
+	Display:none;
+	Position:absolute;
+	min-width:140px;
+}
+.nav li a img{
+	Height:50px;
+	Width:50px;
+}
+
+
+#colegio{
+	Position:absolute;
+	Width:200px;
+	left:46%;
+	top:40%;
+}
+ul, ol{
+	list-style:none;
+}
+.bachilleres li a{
+	Background-color:white;
+	color:black;
+	text-decoration:none;
+	padding:10px 15px;
+	Display:block;
+}
+
+
+* {
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box; 
+}
+
+.contenedor {
+  min-height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.botones {
+  display: flex; 
+  flex-direction: column; 
+  position: absolute; 
+  left:38%;
+  top:40%;
+}
+
+.boton1 {
+  text-decoration: none; 
+  padding: 20px 50px; 
+  font-size: 1.5rem; 
+  position: relative; 
+  margin: 100px; 
+}
+
+.boton1 {
+  background: white; 
+  color: green;
+  border-radius: 100px; 
+  transition: transform 0.3s ease; 
+}
+
+.boton1::after, .boton1::before {
+  content: ""; 
+  position: absolute; 
+  opacity: 0.3; 
+  background:red; 
+  border-radius: inherit; 
+  width: 100%;
+  height: 100%;
+  left:0;  
+  bottom: 0; 
+  z-index: -1; 
+  transition: transform 0.3s ease; 
+}
+
+.boton1:hover {
+  transform: translate(-20px, -20px);
+}
+
+.boton1:hover::before {
+  transform: translate(20px, 20px);
+  
+}
+.piedepagina footer{
+	background:white;
+	Position:absolute;
+	left:25%;
+	top:100%;
+}
